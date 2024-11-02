@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Sentiment Analysis Prediction</title>
+</head>
+<body>
+    <nav class="flex items-center justify-between  bg-teal-800 p-4">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <img class="fill-current h-8 w-8 mr-2" style="width:50px; height:50px; border-radius:25px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH6n-BX1VIQ1PRZa7OXHwIIIcGjHyR__CultK1sReUeQ&s" />
+          <span class="font-semibold text-xl tracking-tight">Sentiment Analysis Prediction</span>
+        </div>
+        <div class="w-1/2 flex flex-row items-center ">
+          <div class="text-xl flex flex-row ">
+            <a href="{% url 'bypost' %}" class="text-teal-200 hover:text-white mr-4">
+              By Post
+            </a>
+            <p class="text-teal-200">|</p>
+            <a href="{% url 'bylink' %}"  class="text-teal-200 hover:text-white ml-4">
+              By link
+            </a>
+          </div>
+        </div>
+      </nav>
+{% block body %}
+{% endblock %}
+ 
+</body>
